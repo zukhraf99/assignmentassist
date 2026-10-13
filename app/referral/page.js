@@ -1,4 +1,6 @@
 import Link from "next/link";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 import ReferralForm from "../components/ReferralForm";
 
 export const metadata = {
@@ -9,12 +11,9 @@ export const metadata = {
 
 export default function Referral() {
   return (
+    <>
     <main>
-      <header>
-        <div className="wrap hdr">
-          <Link className="logo" href="/">Assignment<span>Assist</span></Link>
-        </div>
-      </header>
+      <Header />
       <section>
         <div className="wrap narrow">
           <h1 className="h1s">Refer a friend, earn rewards.</h1>
@@ -23,5 +22,7 @@ export default function Referral() {
         </div>
       </section>
     </main>
+    <Footer />
+    </>
   );
 }

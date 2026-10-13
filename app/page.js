@@ -2,6 +2,8 @@ import Link from "next/link";
 import { SITE, REVIEWS, FAQS } from "@/lib/config";
 import ContactButtons from "./components/ContactButtons";
 import HelpForm from "./components/HelpForm";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const jsonLd = [
   {
@@ -34,17 +36,7 @@ export default function Home() {
         </div>
       </div>
 
-      <header>
-        <div className="wrap hdr">
-          <a className="logo" href="#top">Assignment<span>Assist</span></a>
-          <nav aria-label="Main">
-            <a href="#help">What we help with</a>
-            <a href="#how">How it works</a>
-            <a href="#reviews">Reviews</a>
-            <a className="keep" href="#request">Get help</a>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       <main id="top">
         <div className="hero">
@@ -70,7 +62,7 @@ export default function Home() {
         <section id="request" className="panel">
           <div className="wrap narrow">
             <h2>Need help fast? Send us the details.</h2>
-            <p className="sub">Tell us what you're working on and when it's due. We'll get back to you quickly.</p>
+            <p className="sub">Tell us what you're working on and when it's due. We'll get back to you quickly. Your details stay private and are never shared. A nickname is fine.</p>
             <HelpForm />
             <p className="alt">Prefer to talk? <ContactButtons compact /></p>
           </div>
@@ -154,12 +146,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer>
-        <div className="wrap ftr">
-          <span>© {new Date().getFullYear()} {SITE.name}</span>
-          <span><a href={`mailto:${SITE.email}`}>{SITE.email}</a></span>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

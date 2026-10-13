@@ -20,6 +20,10 @@ export default function HelpForm() {
       setError(`That file is over ${MAX_MB} MB. Please upload a smaller file or email it to us.`);
       return;
     }
+    if (!String(fd.get("email")).trim() && !String(fd.get("whatsapp")).trim()) {
+      setError("Please give an email or a WhatsApp number so we can reply to you.");
+      return;
+    }
     setStatus("sending");
     try {
       let filePath = null, fileName = null;
@@ -72,11 +76,11 @@ export default function HelpForm() {
   return (
     <form className="helpform" onSubmit={onSubmit}>
       <div className="row">
-        <label>Your name<input name="name" required maxLength={80} autoComplete="name" /></label>
-        <label>Email<input name="email" type="email" required maxLength={120} autoComplete="email" /></label>
+        <label>Name or nickname (optional)<input name="name" maxLength={80} autoComplete="off" /></label>
+        <label>Email<input name="email" type="email" maxLength={120} autoComplete="email" /></label>
       </div>
       <div className="row">
-        <label>WhatsApp number (optional)<input name="whatsapp" maxLength={30} inputMode="tel" placeholder="+92 ..." /></label>
+        <label>WhatsApp number<input name="whatsapp" maxLength={30} inputMode="tel" placeholder="+92 ..." /></label>
         <label>Subject
           <select name="subject" required defaultValue="">
             <option value="" disabled>Choose a subject</option>
@@ -95,6 +99,7 @@ export default function HelpForm() {
         <input name="file" type="file" accept=".pdf,.doc,.docx,.txt,.ppt,.pptx,.xls,.xlsx,.png,.jpg,.jpeg,.zip" />
       </label>
       <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hp" />
+      <p className="fine">Give an email <b>or</b> a WhatsApp number, whichever you prefer. Your details and files are kept private, never shared, and deleted on request.</p>
       <p className="fine">
         We coach you through your own work with explanations, planning, feedback and examples.
         We don't write assignments for you to submit.
