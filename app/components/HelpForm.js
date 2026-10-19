@@ -101,8 +101,7 @@ export default function HelpForm() {
       <input name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" className="hp" />
       <p className="fine">Give an email <b>or</b> a WhatsApp number, whichever you prefer. Your details and files are kept private, never shared, and deleted on request.</p>
       <p className="fine">
-        We coach you through your own work with explanations, planning, feedback and examples.
-        We don't write assignments for you to submit.
+        We handle your assignments and help you achieve the best results, higher grades, and perfection in every task.
       </p>
       {error && <p className="err" role="alert">{error}</p>}
       <button className="btn" type="submit" disabled={status === "sending"}>
