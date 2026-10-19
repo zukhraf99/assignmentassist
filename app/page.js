@@ -42,7 +42,7 @@ export default function Home() {
         <div className="hero">
           <div className="wrap herogrid">
             <div>
-              <h1>Stuck on an assignment? Let's <span className="mark">work it out</span> together.</h1>
+              <h1>Stuck on an assignment? Let <span className="mark">me do it</span> for you!.</h1>
               <p className="lede">Assignment Assist helps students understand the task, plan the work and improve their own drafts, even when the deadline is close.</p>
               <a className="btn" href="#request">Send a request</a>
               <Link className="btn ghost sp" href="/referral">Join our referral program</Link>
