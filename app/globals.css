@@ -129,6 +129,11 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem}
 .page .updated{color:var(--muted);font-size:.95rem;margin:0 0 28px}
 .card{background:#fff;border:2px solid var(--graphite);border-radius:12px;padding:24px;margin:24px 0}
 
+/* ---- review form (Write your review) ---- */
+.rev-cta{margin-top:32px}
+.rev-title{font-family:var(--head);font-size:1.4rem;margin:0}
+.helpform label.check{display:flex;gap:10px;align-items:flex-start;font-weight:400}
+.helpform label.check input{width:auto;margin-top:4px}
 
 /* ---- own captcha ---- */
 .captcha-box{display:grid;gap:8px}
@@ -149,4 +154,3 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem}
 .rscroll{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;padding:6px 4px 18px;scrollbar-width:thin;scrollbar-color:var(--ink) transparent;-webkit-overflow-scrolling:touch}
 .rscroll .review{flex:0 0 min(340px,85%);scroll-snap-align:start}
 @media(prefers-reduced-motion:reduce){.rscroll{scroll-behavior:auto}}
-
