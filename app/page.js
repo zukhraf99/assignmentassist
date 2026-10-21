@@ -4,6 +4,7 @@ import ContactButtons from "./components/ContactButtons";
 import HelpForm from "./components/HelpForm";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import ReviewsSection from "./components/ReviewsSection";
 
 const jsonLd = [
   {
@@ -23,7 +24,7 @@ const jsonLd = [
     })),
   },
 ];
-
+export const revalidate = 3600;
 export default function Home() {
   return (
     <>
@@ -95,27 +96,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="reviews">
-          <div className="wrap">
-            <h2>What students say</h2>
-            <p className="sub">Real feedback from students we've helped.</p>
-            <div className="reviews">
-              {REVIEWS.map((r, i) =>
-                r.placeholder ? (
-                  <figure className="review ph" key={i}>
-                    <blockquote>Your student review goes here.</blockquote>
-                    <figcaption>Student name, course</figcaption>
-                  </figure>
-                ) : (
-                  <figure className="review" key={i}>
-                    <blockquote>{r.quote}</blockquote>
-                    <figcaption>{r.name}{r.detail ? `, ${r.detail}` : ""}</figcaption>
-                  </figure>
-                )
-              )}
-            </div>
-          </div>
-        </section>
+        <ReviewsSection />
 
         <section className="panel">
           <div className="wrap">
