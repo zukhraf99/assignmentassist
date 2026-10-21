@@ -128,3 +128,12 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:.95rem}
 .page ul{padding-left:22px}
 .page .updated{color:var(--muted);font-size:.95rem;margin:0 0 28px}
 .card{background:#fff;border:2px solid var(--graphite);border-radius:12px;padding:24px;margin:24px 0}
+
+
+/* ---- own captcha ---- */
+.captcha-box{display:grid;gap:8px}
+.cap-label{font-weight:600;font-size:.95rem}
+.cap-row{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.cap-row img{border:2px solid var(--graphite);border-radius:8px;max-width:100%;height:auto}
+.cap-btn{padding:8px 14px;font-size:.9rem}
+.captcha-box input{max-width:180px;letter-spacing:.3em;font-size:1.1rem}
