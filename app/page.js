@@ -71,14 +71,14 @@ export default function Home() {
         <section id="help">
           <div className="wrap">
             <h2>What we help with</h2>
-            <p className="sub">Whatever the subject, we help you get from "I don't get it" to "I've got this."</p>
+            <p className="sub">Practical academic support that helps you understand the work and submit with confidence."</p>
             <ul className="help">
-              <li><b>Understanding the question</b><span>Break down what your teacher is really asking for.</span></li>
-              <li><b>Planning your work</b><span>Turn a big assignment into small steps with a deadline for each.</span></li>
-              <li><b>Outlines and structure</b><span>Organise your ideas before you start writing.</span></li>
-              <li><b>Draft feedback</b><span>Get notes on clarity, grammar and flow, then improve it yourself.</span></li>
-              <li><b>Worked examples</b><span>See a problem solved step by step, then try the next one on your own.</span></li>
-              <li><b>References and formatting</b><span>Cite sources properly and format to your school's style.</span></li>
+              <li><b>Assignments, Reports & Papers</b><span>Get help structuring, developing, and polishing your academic work.</span></li>
+              <li><b>Urgent & On-Time Delivery</b><span>Deadline-focused support to help you stay on track, even when time is short.</span></li>
+              <li><b>Projects & Documentation</b><span>Support with project planning, technical documentation, and clear presentation.</span></li>
+              <li><b>Guidance That Teaches</b><span>Understand the process with clear explanations, examples, and step-by-step help.</span></li>
+              <li><b>Human-Written, Original Work</b><span>No AI-generated or generic AI-slop content. Work is written thoughtfully and tailored to your requirements.</span></li>
+              <li><b>Review, Editing & Formatting</b><span>Improve clarity, grammar, structure, citations, and formatting to match your guidelines.</span></li>
             </ul>
           </div>
         </section>
