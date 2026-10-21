@@ -33,8 +33,7 @@ export default async function ReviewsSection() {
       <div className="wrap">
         <h2>What students say</h2>
         <p className="sub">
-          Real feedback from students we've helped.
-          {rated.length >= 3 && <> <b className="avg">★ {avg.toFixed(1)}</b> average from {rated.length} ratings.</>}
+          Hear from students about their experiences and success with our support.
         </p>
 
         {all.length > 0 ? (
