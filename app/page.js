@@ -88,9 +88,9 @@ export default function Home() {
             <h2>How it works</h2>
             <p className="sub">Three steps, and you stay in charge of your own work.</p>
             <ol className="steps">
-              <li><b>Send your request</b><span>Tell us the subject, what you're stuck on and your deadline.</span></li>
-              <li><b>Get guidance</b><span>We explain the task, plan it with you and answer your questions.</span></li>
-              <li><b>Write and submit</b><span>Do the work in your own words, get feedback, then hand it in.</span></li>
+              <li><b>Send your request</b><span>Tell us about your assignment, report, project, or documentation. Share your requirements, guidelines, and deadline.</span></li>
+              <li><b>Get Help & Guidance</b><span>We review your requirements, explain the task, help you plan your work, and provide clear guidance tailored to your needs.</span></li>
+              <li><b>Review, Learn & Submit</b><span>Get feedback, improve your work, and understand the key concepts so you can confidently finalize and submit.</span></li>
             </ol>
           </div>
         </section>
