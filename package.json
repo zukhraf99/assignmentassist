@@ -5,12 +5,19 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "postinstall": "node scripts/copy-ocr-assets.js"
   },
   "dependencies": {
     "@supabase/supabase-js": "^2.45.0",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "jszip": "^3.10.1",
+    "mammoth": "^1.8.0",
     "next": "14.2.15",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "tesseract.js": "^7.0.0",
+    "unpdf": "^0.12.1",
+    "word-extractor": "^1.0.4"
   }
 }
