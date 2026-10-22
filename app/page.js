@@ -5,6 +5,7 @@ import HelpForm from "./components/HelpForm";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ReviewsSection from "./components/ReviewsSection";
+import SubjectsGrid from "./components/SubjectsGrid";
 
 const jsonLd = [
   {
@@ -81,6 +82,13 @@ export default function Home() {
               <li><b>Human-Written, Original Work</b><span>No AI-generated or generic AI-slop content. Work is written thoughtfully and tailored to your requirements.</span></li>
               <li><b>Review, Editing & Formatting</b><span>Improve clarity, grammar, structure, citations, and formatting to match your guidelines.</span></li>
             </ul>
+          </div>
+        </section>
+        <section id="subjects">
+          <div className="wrap">
+            <h2>Subjects we help with</h2>
+            <p className="sub">Choose your subject to see how we can help with your assignments.</p>
+        <SubjectsGrid />
           </div>
         </section>
 
