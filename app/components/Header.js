@@ -6,6 +6,7 @@ export default function Header() {
       <div className="wrap hdr">
         <Link className="logo" href="/">Assignment<span>Assist</span></Link>
         <nav aria-label="Main">
+          <Link href="/#subjects">Subjects</Link>
           <Link href="/#help">What we help with</Link>
           <Link href="/#how">How it works</Link>
           <Link href="/about">About</Link>
