@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { ocrStored, canOcr } from "@/lib/ocrClient";
+import PublishPanel from "./PublishPanel";
 
 const STATUS = ["needs_review", "reviewed", "archived", "uploaded", "failed", "duplicate"];
 const extOf = (n) => String(n).split(".").pop().toLowerCase();
@@ -96,6 +97,7 @@ export default function ArchiveEditor({ doc, text, textLength, universities, sub
         <label>Status<select value={f.status} onChange={(e) => set("status", e.target.value)}>{STATUS.map((s) => <option key={s} value={s}>{s.replace("_", " ")}</option>)}</select></label>
         {msg && <p className="fine" role="status">{msg}</p>}
         <button className="btn" disabled={busy} onClick={save}>Save</button>
+        <PublishPanel doc={doc} form={f} />
       </div>
     </div>
   );
