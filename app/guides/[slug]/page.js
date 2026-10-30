@@ -5,6 +5,7 @@ import Footer from "../../components/Footer";
 import GuideCard from "../../components/GuideCard";
 import GuideContact from "../../components/GuideContact";
 import RichText from "../../components/RichText";
+import PostWhatsAppButton from "../../components/PostWhatsAppButton";
 import { SITE } from "@/lib/config";
 import { getGuide, getRelated } from "@/lib/guides";
 
@@ -61,6 +62,7 @@ export default async function GuidePage({ params }) {
           </p>
 
           <RichText body={g.body} />
+          <PostWhatsAppButton guide={g} />
 
           {g.official_brief_url && (
             <div className="card">
