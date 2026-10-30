@@ -53,6 +53,7 @@ export default async function GuidePage({ params }) {
             <span>{g.title}</span>
           </nav>
           <h1>{g.title}</h1>
+          <PostWhatsAppButton guide={g} />
           {g.summary && <p className="sub">{g.summary}</p>}
           <p className="gmeta">
             {[g.subject && <Link key="s" href={`/guides/subject/${g.subject.slug}`}>{g.subject.name}</Link>,
@@ -62,7 +63,6 @@ export default async function GuidePage({ params }) {
           </p>
 
           <RichText body={g.body} />
-          <PostWhatsAppButton guide={g} />
 
           {g.official_brief_url && (
             <div className="card">
