@@ -1,7 +1,7 @@
 import { SITE } from "@/lib/config";
 
 // Edit this text whenever you like.
-const BUTTON_TEXT = "Chat on WhatsApp";
+const BUTTON_TEXT = "Solution Available";
 
 // One glowing button at the top of a post, right under the heading. Opens WhatsApp with the post title and the post link as the message.
 export default function PostWhatsAppButton({ guide }) {
