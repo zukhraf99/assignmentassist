@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import ReviewsSection from "./components/ReviewsSection";
 import SubjectsGrid from "./components/SubjectsGrid";
+import LatestAssignments from "./components/LatestAssignments";
 
 const jsonLd = [
   {
@@ -26,7 +27,7 @@ const jsonLd = [
   },
 ];
 export const revalidate = 3600;
-export default function Home() {
+export default async function Home() {
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
@@ -91,6 +92,8 @@ export default function Home() {
         <SubjectsGrid />
           </div>
         </section>
+
+        <LatestAssignments />
 
         <section id="how" className="panel">
           <div className="wrap">
